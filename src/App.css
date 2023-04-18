@@ -1,0 +1,112 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* FONT */
+
+@font-face {
+  font-family: "Rick And Morty";
+  src: url(assets/fonts/get_schwifty.ttf);
+}
+
+/* CSS */
+
+.container {
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 7rem;
+}
+
+
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: blueviolet;
+  gap: 25rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.intro-container {
+  width: 60%;
+}
+
+h1.about,
+h2.discover {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.synopsis {
+  margin-bottom: 2rem;
+}
+
+.click-the-button-paragraph {
+  margin-bottom: 2rem;
+}
+
+.synopsis,
+.click-the-button-paragraph {
+  font-size: 1.8rem;
+}
+
+.btn-paragraph {
+  background-color: #fff;
+  width: 35%;
+  padding: 1rem 3rem 1rem 1.5rem;
+  border-radius: 4rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: none;
+}
+
+.btn-portal {
+  cursor: pointer;
+  width: 5.5rem;
+  position: absolute;
+  top: -4.8rem;
+  left: 12.5rem;
+}
+
+.character-result-container {
+  width: 50%;
+  background-color: #6da134;
+}
+
+.intro-container,
+.character-result-container {
+  padding: 2rem;
+}
+
+.morty-footer {
+  width: 10rem;
+  position: absolute;
+  bottom: 0rem;
+}
