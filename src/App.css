@@ -39,8 +39,6 @@ a {
   padding: 0 7rem;
 }
 
-
-
 .main-container {
   display: flex;
   align-items: center;
@@ -106,7 +104,13 @@ button {
 }
 
 .morty-footer {
-  width: 10rem;
+  width: 9rem;
   position: absolute;
-  bottom: 0rem;
+  bottom: 0;
+}
+
+.rick-header {
+  width: 25rem;
+  position: absolute;
+  top: 0;
 }

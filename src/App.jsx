@@ -6,6 +6,11 @@ function App() {
   return (
     <div className="container">
       <Header />
+      <img
+        className="rick-header"
+        src="src/assets/rick-header.png"
+        alt="Rick"
+      />
       <main className="main-container">
         <div className="intro-container">
           <h1 className="about">Sobre Rick and Morty</h1>
@@ -41,7 +46,7 @@ function App() {
       <img
         className="morty-footer"
         src="src/assets/morty-footer.png"
-        alt="Rick and Morty"
+        alt="Morty"
       />
     </div>
   );
