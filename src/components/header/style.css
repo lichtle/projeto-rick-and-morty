@@ -41,8 +41,16 @@ header {
 
 .fa-brands {
   font-size: 4rem;
+  transition: 0.3s ease-in-out;
 }
 
 a {
   color: black;
+}
+
+@media (hover: hover) {
+  .fa-brands:hover {
+    color: #01a4b8;
+    font-size: 4.5rem;
+  }
 }

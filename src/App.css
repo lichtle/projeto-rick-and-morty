@@ -40,7 +40,7 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .main-container {
@@ -78,26 +78,19 @@ h2.discover-title {
   font-size: 1.8rem;
 }
 
-.btn-paragraph {
-  background-color: #fff;
-  width: 35%;
-  padding: 1rem 3rem 1rem 1.5rem;
-  border-radius: 4rem;
-}
-
 button {
+  border: none;
   display: flex;
   align-items: center;
   position: relative;
-  border: none;
 }
 
 .btn-portal {
+  width: 10rem;
   cursor: pointer;
-  width: 5.5rem;
   position: absolute;
-  top: -4.8rem;
-  left: 12.5rem;
+  top: 12.6rem;
+  right: 13rem;
 }
 
 .character-result-container {
@@ -117,4 +110,20 @@ button {
 .intro-container,
 .character-result-container {
   padding: 2rem;
+}
+
+.character-name {
+  font-size: 3rem;
+}
+
+.character-img {
+  width: 26rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.bold {
+  font-size: 1.7rem;
+  font-weight: 600;
 }
