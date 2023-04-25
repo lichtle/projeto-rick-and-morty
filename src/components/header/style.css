@@ -3,7 +3,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5rem;
+  padding: 2rem 5rem;
 }
 
 .logo-container {
@@ -22,6 +22,14 @@ header {
   color: #01a4b8;
   font-size: 2.6rem;
   font-family: "Rick And Morty", "Chakra Petch", sans-serif;
+}
+
+.rick-and-morty {
+  width: 30rem;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  margin-left: -10rem;
 }
 
 .links-container {

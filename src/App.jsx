@@ -1,32 +1,34 @@
 import { useState } from "react";
 import "./App.css";
 import Header from "./components/header/index.jsx";
+import getCharacter from "./services";
+
+getCharacter(5);
 
 function App() {
   return (
     <div className="container">
       <Header />
-      <img
-        className="rick-header"
-        src="src/assets/rick-header.png"
-        alt="Rick"
-      />
       <main className="main-container">
         <div className="intro-container">
-          <h1 className="about">Sobre Rick and Morty</h1>
-          <p className="synopsis">
-            Rick Sanchez é um cientista genial e alcoólatra que foi morar com a
-            família de sua filha Beth, uma cirurgiã cardíaca de equinos. Ele
-            divide seu tempo entre desenvolver projetos altamente tecnológicos
-            em seu laboratório (garagem da casa de Beth) e levar seu neto de 14
-            anos Morty em aventuras perigosas e surreais pelo Multiverso.
-            Combinados com tensões preexistentes dentro da família, esses
-            eventos causam ao sensível Morty muito angústia em casa e na escola.
-          </p>
-          <h2 className="discover">Descubra personagens</h2>
-          <p className="click-the-button-paragraph">
-            Clique no portal para descobrir um personagem aleatório!
-          </p>
+          <div className="about">
+            <h1 className="about-title">Sobre Rick and Morty</h1>
+            <p className="synopsis">
+              Rick Sanchez é um cientista genial e alcoólatra que foi morar com a
+              família de sua filha Beth, uma cirurgiã cardíaca de equinos. Ele
+              divide seu tempo entre desenvolver projetos altamente tecnológicos
+              em seu laboratório (garagem da casa de Beth) e levar seu neto de 14
+              anos Morty em aventuras perigosas e surreais pelo Multiverso.
+              Combinados com tensões preexistentes dentro da família, esses
+              eventos causam ao sensível Morty muito angústia em casa e na escola.
+            </p>
+          </div>
+          <div className="discover">
+            <h2 className="discover-title">Descubra personagens</h2>
+            <p className="click-the-button-paragraph">
+              Clique no portal para descobrir um personagem aleatório!
+            </p>
+          </div>
           <div className="button-container">
             <p className="btn-paragraph">Get Schwifty!</p>
             <button>
@@ -35,19 +37,18 @@ function App() {
           </div>
         </div>
         <div className="character-result-container">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-            expedita quis ab nobis impedit saepe commodi tempore, reprehenderit
-            error iusto reiciendis modi nihil autem tempora assumenda quia
-            quibusdam amet aliquid.
-          </p>
+          <h2>Jerry Smith</h2>
+          <img
+            src="https://rickandmortyapi.com/api/character/avatar/5.jpeg"
+            alt="Jerry Smith"
+            width="250"
+          />
+          <p>Gênero: Masculino</p>
+          <p>Espécie: Humano</p>
+          <p>Origem: Planeta Terra</p>
+          <p>Número de episódios em que aparece: xx</p>
         </div>
       </main>
-      <img
-        className="morty-footer"
-        src="src/assets/morty-footer.png"
-        alt="Morty"
-      />
     </div>
   );
 }
